@@ -27,10 +27,27 @@ nav{
     background-color: bisque;
     list-style: none;
 }
-.home li a{
+.home li {
     padding-bottom: 10px;
     margin-left: 20px;
     border: 2px dashed rgba(91, 118, 206, 0.808);
     justify-content: center;
+    align-items: center;
 
+}
+.home li a{
+    font-size: 20px;
+}
+/*flexbox*/ 
+
+.flex-box{
+    border: solid darkgreen;
+    height: 50px;
+    width: 50px;
+}
+.flex-container{
+    border: solid rgb(250, 25, 137);
+    height: 500px;
+    width: 500px;
+    display: flex;
 }
