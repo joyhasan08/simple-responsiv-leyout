@@ -50,4 +50,7 @@ nav{
     height: 500px;
     width: 500px;
     display: flex;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
 }
