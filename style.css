@@ -1,0 +1,36 @@
+*{
+
+}
+
+.container{
+    border: solid rebeccapurple;
+    text-decoration: dashed;
+    display: flex;
+}
+.box{
+    border: dashed red;
+    padding: 0;
+    margin: 2%;
+    width: 40vw;
+}
+nav{
+    border: solid goldenrod;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50%;
+    background-color: aquamarine;
+    width: 99vw;
+    height: 4vw;
+}
+.home{
+    display: flex;
+    background-color: bisque;
+    list-style: none;
+}
+.home li a{
+    padding-bottom: 10px;
+    margin-left: 20px;
+    border: 2px dashed rgba(91, 118, 206, 0.808);
+    justify-content: center;
+
+}
