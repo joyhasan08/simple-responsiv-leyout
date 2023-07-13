@@ -11,7 +11,7 @@
     grid-template-columns: repeat(7 , 1fr); /* for aline into 7 colam every colam 1 frection*/
     column-gap: 5px;
     row-gap: 10px;
-    max-width: 1000px;
+    max-width: 800px;
     border: solid chartreuse;
     padding: 80px;
 }
@@ -20,12 +20,33 @@
     height: 100px;
     background-color: aquamarine;
     border-radius: 10px;
-
-    
+    align-items: center;
+    justify-content: center;
+    display: flex;    
+}
+.bar{
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 </style>
+
 <body>
+    <section class="header">
+        <h1>
+        Simple Resposive Calender.
+    </h1>
+</section>
+    
     <section class="calendar"> <!--.date{$}*35-->
+        <div class="bar">S</div>
+        <div class="bar">M</div>
+        <div class="bar">T</div>
+        <div class="bar">W</div>
+        <div class="bar">T</div>
+        <div class="bar">F</div>
+        <div class="bar">S</div>
         <div class="date">31</div>
         <div class="date">32</div>
         <div class="date">33</div>
@@ -63,5 +84,6 @@
         <div class="date">30</div>
         
     </section>
+
 </body>
 </html>
