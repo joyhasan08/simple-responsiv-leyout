@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive</title>
+    <style>
+        .header-container{
+            background-color: lightgreen;
+         
+            border: #1900ff dashed;
+        }
+        .body-container{
+            background-color: lightyellow;
+       
+            border: #1900ff dashed;
+            margin: 4%;
+            padding: 2%;
+        }
+        body{
+            display: flex;
+            /*grid-template-columns: repeat(2 , 1fr);*/
+            border: red solid;
+        }
+        header{
+            border: solid #1900ff;
+            width: 30%;
+            margin: 3%;
+            padding: 2%
+        }
+        main{
+            border: #1900ff solid;
+            width: 100%;
+            margin: 3%;
+        }
+
+        @media screen and (max-width: 576px) {
+            body{
+               display: grid;
+               grid-template-columns: repeat(1 ,1fr); 
+               color: #1900ff;
+               width: 90%;
+            }
+            header{
+                width: 90%;
+                border: peru solid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h3>Header part</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit dolorem quia, deserunt facilis maiores rem explicabo consequuntur, omnis in reiciendis repudiandae voluptate recusandae fugiat! A minima vitae quas eveniet expedita. </p>
+        </div>
+
+    </header>
+    <main>
+        <div class="body-container">
+            <h3>Body part</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit dolorem quia, deserunt facilis maiores rem explicabo consequuntur, omnis in reiciendis repudiandae voluptate recusandae fugiat! A minima vitae quas eveniet expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates omnis sit fuga facere tempora, architecto nulla nostrum impedit accusantium cumque odit laudantium? Explicabo temporibus aspernatur consectetur cupiditate impedit odit adipisci? Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta culpa magnam quibusdam modi adipisci omnis, dolores sunt tempora facilis sint labore numquam eveniet veritatis facere rem accusamus, consequuntur asperiores esse.</p>
+        </div>
+    </main>
+</body>
+</html>
