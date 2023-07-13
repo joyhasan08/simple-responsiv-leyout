@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2 Design a responsive grid layout</title>
+    <style>
+        .container-box1{
+            border: solid pink;
+            width: 100%;
+        }
+        .container-box2{
+            border: solid orange;
+        }
+        .sub-container1{
+            border: solid purple;
+            
+        }
+        .sub-container2{
+            border: solid gray;
+        }
+        .main{
+            display: flex;
+            width: 100%;
+        }
+        .sub-container{
+            display: flex;
+            height: 50%;
+            flex: end;
+        }
+        .bap{
+            border: solid 10px;
+        }
+
+
+        @media screen and (max-width: 576px) {
+                .main{
+                    display: grid;
+                    grid-template-columns: repeat(1,1fr);
+                }
+        }
+    </style>
+</head>
+<body>
+    <section class="main">
+        <div class="container-box1">
+            <h1>color pink</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum necessitatibus reiciendis doloremque commodi totam quas, saepe fugiat culpa enim officia, nobis cupiditate autem, pariatur exercitationem in quam cumque suscipit beatae dolorem blanditiis. Consectetur ut molestias et soluta, aspernatur ipsum, molestiae error, veniam qui earum sint dolorum minima. Praesentium quae, assumenda iusto possimus, earum, veritatis impedit vitae laborum totam quibusdam quisquam facere esse nulla corrupti laudantium enim consectetur nesciunt aut laboriosam quos quod. Ratione vitae amet cupiditate voluptatem eaque ipsam? Quaerat ipsam vitae nemo maxime, laborum iure. Tenetur voluptate possimus iusto aut vel maxime tempore. Ipsum ipsa velit officia optio, repudiandae placeat, dolores molestias blanditiis ad et quisquam alias temporibus. Repellat enim minus a iure, excepturi nesciunt dolores incidunt qui ipsa iste modi quis consectetur accusamus? Inventore beatae esse atque quasi. Sit qui veniam velit labore eaque rem, molestias sunt, ut distinctio non dolorum ducimus sequi consequuntur! Eos exercitationem ipsam totam, quas dicta hic quis incidunt officiis sit optio voluptates doloremque dolores nihil molestiae ab vel nam et ad numquam aliquam veritatis repellat neque omnis? Pariatur suscipit exercitationem saepe, assumenda expedita ipsum? Eaque, ex saepe exercitationem illum iusto, temporibus amet debitis aliquam, vel iste culpa. Minima nihil sunt asperiores ipsam aspernatur.</p>
+        </div>
+         <div class="bap">
+            <div class="container-box2">
+                <h1>color orng</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab fuga, laboriosam tempore quidem ut necessitatibus veniam consectetur. Facilis dignissimos amet tempora excepturi sit officiis fugit quibusdam quo! Ipsum, veniam eos.</p>
+            </div>
+            
+                    <div class="sub-container">
+                        <div class="sub-container1">
+                            <h1>orng</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos nesciunt nam assumenda provident consequatur quam, ut sapiente optio fuga in, </p>
+                        </div>
+                        <div class="sub-container2">
+                            <h1>gray</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui magni ratione eaque, corporis nemo odit vitae quas repellat fugit atque. .</p>
+                        </div>
+                    </div>
+               
+            </div> 
+            
+         </div>
+        
+
+    </section>
+</body>
+</html>
